@@ -1,5 +1,5 @@
 CMakeFiles/craft.dir/src/db.c.o: \
-  /Users/patrickcarvalho/projects/nosync.nosync/Craft1/src/db.c \
+  /Users/patrickcarvalho/projects/nosync.nosync/minecraft/src/db.c \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/string.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/_types.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types.h \
@@ -31,13 +31,13 @@ CMakeFiles/craft.dir/src/db.c.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/secure/_strings.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/secure/_common.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/secure/_string.h \
-  /Users/patrickcarvalho/projects/nosync.nosync/Craft1/src/db.h \
-  /Users/patrickcarvalho/projects/nosync.nosync/Craft1/src/map.h \
-  /Users/patrickcarvalho/projects/nosync.nosync/Craft1/src/sign.h \
-  /Users/patrickcarvalho/projects/nosync.nosync/Craft1/src/ring.h \
-  /Users/patrickcarvalho/projects/nosync.nosync/Craft1/deps/sqlite/sqlite3.h \
+  /Users/patrickcarvalho/projects/nosync.nosync/minecraft/src/db.h \
+  /Users/patrickcarvalho/projects/nosync.nosync/minecraft/src/map.h \
+  /Users/patrickcarvalho/projects/nosync.nosync/minecraft/src/sign.h \
+  /Users/patrickcarvalho/projects/nosync.nosync/minecraft/src/ring.h \
+  /Users/patrickcarvalho/projects/nosync.nosync/minecraft/deps/sqlite/sqlite3.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/include/stdarg.h \
-  /Users/patrickcarvalho/projects/nosync.nosync/Craft1/deps/tinycthread/tinycthread.h \
+  /Users/patrickcarvalho/projects/nosync.nosync/minecraft/deps/tinycthread/tinycthread.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/time.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_clock_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_time_t.h \

@@ -155,6 +155,7 @@ typedef struct {
     Block copy1;
 
     int p_height; // player height
+    long timeout;
 } Model;
 
 static Model model;
@@ -2609,6 +2610,7 @@ void reset_model() {
     glfwSetTime(g->day_length / 3.0);
     g->time_changed = 1;
     g->p_height = 2;
+    g->timeout = TIME_OUT;
 }
 
 int main(int argc, char **argv) {
@@ -2793,11 +2795,8 @@ int main(int argc, char **argv) {
         me->id = 0;
         me->name[0] = '\0';
         me->buffer = 0;
-        
-        
+                
         g->player_count = 1;
-
-
 
         // LOAD STATE FROM DATABASE //
         int loaded = db_load_state(&s->x, &s->y, &s->z, &s->rx, &s->ry);
@@ -2806,22 +2805,12 @@ int main(int argc, char **argv) {
             s->y = highest_block(s->x, s->z);
         }
 
+        // TimeOut
+        time_t start = time(NULL);
+
         // BEGIN MAIN LOOP //
         double previous = glfwGetTime();
         while (1) {
-            
-        
-        // printf("state.x %f \n", me->state.x);
-        // printf("state.y %f \n", me->state.y);
-        // printf("state.rx %f \n", me->state.rx);
-        // printf("state.ry %f \n", me->state.ry);
-        // printf("state.ry %f \n", me->buffer);
-
-        // printf("width: %i \n", g->width);
-        // printf("height: %i \n", g->height);
-
-        
-
             
             // WINDOW SIZE AND SCALE //
             g->scale = get_scale_factor();
@@ -2904,6 +2893,11 @@ int main(int argc, char **argv) {
                 render_item(&block_attrib);
             }
 
+            
+            // Timeout
+            time_t _now = time(NULL);
+            time_t elapsed = _now - start;
+
             // RENDER TEXT //
             char text_buffer[1024];
             float ts = 12 * g->scale;
@@ -2916,10 +2910,10 @@ int main(int argc, char **argv) {
                 hour = hour ? hour : 12;
                 snprintf(
                     text_buffer, 1024,
-                    "(%d, %d) (%.2f, %.2f, %.2f) [%d, %d, %d] %d%cm %dfps",
+                    "(%d, %d) (%.2f, %.2f, %.2f) [%d, %d, %d] %d%cm %dfps Timeout %i",
                     chunked(s->x), chunked(s->z), s->x, s->y, s->z,
                     g->player_count, g->chunk_count,
-                    face_count * 2, hour, am_pm, fps.fps);
+                    face_count * 2, hour, am_pm, fps.fps, g->timeout - elapsed);
                 render_text(&text_attrib, ALIGN_LEFT, tx, ty, ts, text_buffer);
                 ty -= ts * 2;
             }
@@ -2988,10 +2982,13 @@ int main(int argc, char **argv) {
                 }
             }
 
+            
+            
+
             // SWAP AND POLL //
             glfwSwapBuffers(g->window);
             glfwPollEvents();
-            if (glfwWindowShouldClose(g->window)) {
+            if (glfwWindowShouldClose(g->window) || elapsed > g->timeout) {
                 running = 0;
                 break;
             }

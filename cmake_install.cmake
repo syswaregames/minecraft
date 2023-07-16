@@ -1,4 +1,4 @@
-# Install script for directory: /Users/patrickcarvalho/projects/nosync.nosync/Craft1
+# Install script for directory: /Users/patrickcarvalho/projects/nosync.nosync/minecraft
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/patrickcarvalho/projects/nosync.nosync/Craft1/deps/glfw/cmake_install.cmake")
+  include("/Users/patrickcarvalho/projects/nosync.nosync/minecraft/deps/glfw/cmake_install.cmake")
 
 endif()
 
@@ -51,5 +51,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/patrickcarvalho/projects/nosync.nosync/Craft1/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/patrickcarvalho/projects/nosync.nosync/minecraft/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -1,5 +1,5 @@
 CMakeFiles/craft.dir/src/sign.c.o: \
-  /Users/patrickcarvalho/projects/nosync.nosync/Craft1/src/sign.c \
+  /Users/patrickcarvalho/projects/nosync.nosync/minecraft/src/sign.c \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/stdlib.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/Availability.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/AvailabilityVersions.h \
@@ -71,4 +71,4 @@ CMakeFiles/craft.dir/src/sign.c.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/secure/_strings.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/secure/_common.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/secure/_string.h \
-  /Users/patrickcarvalho/projects/nosync.nosync/Craft1/src/sign.h
+  /Users/patrickcarvalho/projects/nosync.nosync/minecraft/src/sign.h

@@ -1,5 +1,5 @@
 CMakeFiles/craft.dir/src/client.c.o: \
-  /Users/patrickcarvalho/projects/nosync.nosync/Craft1/src/client.c \
+  /Users/patrickcarvalho/projects/nosync.nosync/minecraft/src/client.c \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/netdb.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/_types.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types.h \
@@ -136,8 +136,8 @@ CMakeFiles/craft.dir/src/client.c.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/strings.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/secure/_strings.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/secure/_string.h \
-  /Users/patrickcarvalho/projects/nosync.nosync/Craft1/src/client.h \
-  /Users/patrickcarvalho/projects/nosync.nosync/Craft1/deps/tinycthread/tinycthread.h \
+  /Users/patrickcarvalho/projects/nosync.nosync/minecraft/src/client.h \
+  /Users/patrickcarvalho/projects/nosync.nosync/minecraft/deps/tinycthread/tinycthread.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/time.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/pthread.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/pthread/sched.h \

@@ -4,7 +4,7 @@
 # compile C with /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/Users/patrickcarvalho/projects/nosync.nosync/Craft1/deps/glew/include -I/Users/patrickcarvalho/projects/nosync.nosync/Craft1/deps/glfw/include -I/Users/patrickcarvalho/projects/nosync.nosync/Craft1/deps/lodepng -I/Users/patrickcarvalho/projects/nosync.nosync/Craft1/deps/noise -I/Users/patrickcarvalho/projects/nosync.nosync/Craft1/deps/sqlite -I/Users/patrickcarvalho/projects/nosync.nosync/Craft1/deps/tinycthread
+C_INCLUDES = -I/Users/patrickcarvalho/projects/nosync.nosync/minecraft/deps/glew/include -I/Users/patrickcarvalho/projects/nosync.nosync/minecraft/deps/glfw/include -I/Users/patrickcarvalho/projects/nosync.nosync/minecraft/deps/lodepng -I/Users/patrickcarvalho/projects/nosync.nosync/minecraft/deps/noise -I/Users/patrickcarvalho/projects/nosync.nosync/minecraft/deps/sqlite -I/Users/patrickcarvalho/projects/nosync.nosync/minecraft/deps/tinycthread
 
 C_FLAGSarm64 =  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk   -std=c99 -O3
 

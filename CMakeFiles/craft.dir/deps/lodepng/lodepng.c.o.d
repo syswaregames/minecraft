@@ -1,6 +1,6 @@
 CMakeFiles/craft.dir/deps/lodepng/lodepng.c.o: \
-  /Users/patrickcarvalho/projects/nosync.nosync/Craft1/deps/lodepng/lodepng.c \
-  /Users/patrickcarvalho/projects/nosync.nosync/Craft1/deps/lodepng/lodepng.h \
+  /Users/patrickcarvalho/projects/nosync.nosync/minecraft/deps/lodepng/lodepng.c \
+  /Users/patrickcarvalho/projects/nosync.nosync/minecraft/deps/lodepng/lodepng.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/string.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/_types.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types.h \

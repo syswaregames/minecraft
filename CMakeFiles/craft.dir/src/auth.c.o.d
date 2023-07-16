@@ -1,5 +1,5 @@
 CMakeFiles/craft.dir/src/auth.c.o: \
-  /Users/patrickcarvalho/projects/nosync.nosync/Craft1/src/auth.c \
+  /Users/patrickcarvalho/projects/nosync.nosync/minecraft/src/auth.c \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/curl/curl.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/curl/curlver.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/curl/system.h \
@@ -143,4 +143,4 @@ CMakeFiles/craft.dir/src/auth.c.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/strings.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/secure/_strings.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/secure/_string.h \
-  /Users/patrickcarvalho/projects/nosync.nosync/Craft1/src/auth.h
+  /Users/patrickcarvalho/projects/nosync.nosync/minecraft/src/auth.h

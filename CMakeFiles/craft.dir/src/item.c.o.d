@@ -1,8 +1,8 @@
 CMakeFiles/craft.dir/src/item.c.o: \
-  /Users/patrickcarvalho/projects/nosync.nosync/Craft1/src/item.c \
-  /Users/patrickcarvalho/projects/nosync.nosync/Craft1/src/item.h \
-  /Users/patrickcarvalho/projects/nosync.nosync/Craft1/src/util.h \
-  /Users/patrickcarvalho/projects/nosync.nosync/Craft1/deps/glew/include/GL/glew.h \
+  /Users/patrickcarvalho/projects/nosync.nosync/minecraft/src/item.c \
+  /Users/patrickcarvalho/projects/nosync.nosync/minecraft/src/item.h \
+  /Users/patrickcarvalho/projects/nosync.nosync/minecraft/src/util.h \
+  /Users/patrickcarvalho/projects/nosync.nosync/minecraft/deps/glew/include/GL/glew.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/include/stdint.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/stdint.h \
@@ -36,5 +36,5 @@ CMakeFiles/craft.dir/src/item.c.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/os/availability.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/AvailabilityInternal.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gl.h \
-  /Users/patrickcarvalho/projects/nosync.nosync/Craft1/deps/glfw/include/GLFW/glfw3.h \
-  /Users/patrickcarvalho/projects/nosync.nosync/Craft1/src/config.h
+  /Users/patrickcarvalho/projects/nosync.nosync/minecraft/deps/glfw/include/GLFW/glfw3.h \
+  /Users/patrickcarvalho/projects/nosync.nosync/minecraft/src/config.h

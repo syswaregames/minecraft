@@ -1,5 +1,5 @@
 CMakeFiles/craft.dir/deps/noise/noise.c.o: \
-  /Users/patrickcarvalho/projects/nosync.nosync/Craft1/deps/noise/noise.c \
+  /Users/patrickcarvalho/projects/nosync.nosync/minecraft/deps/noise/noise.c \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/math.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/cdefs.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_symbol_aliasing.h \

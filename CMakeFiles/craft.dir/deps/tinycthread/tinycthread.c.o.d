@@ -1,6 +1,6 @@
 CMakeFiles/craft.dir/deps/tinycthread/tinycthread.c.o: \
-  /Users/patrickcarvalho/projects/nosync.nosync/Craft1/deps/tinycthread/tinycthread.c \
-  /Users/patrickcarvalho/projects/nosync.nosync/Craft1/deps/tinycthread/tinycthread.h \
+  /Users/patrickcarvalho/projects/nosync.nosync/minecraft/deps/tinycthread/tinycthread.c \
+  /Users/patrickcarvalho/projects/nosync.nosync/minecraft/deps/tinycthread/tinycthread.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/time.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/_types.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_types.h \

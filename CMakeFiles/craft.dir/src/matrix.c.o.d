@@ -1,5 +1,5 @@
 CMakeFiles/craft.dir/src/matrix.c.o: \
-  /Users/patrickcarvalho/projects/nosync.nosync/Craft1/src/matrix.c \
+  /Users/patrickcarvalho/projects/nosync.nosync/minecraft/src/matrix.c \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/math.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/cdefs.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/_symbol_aliasing.h \
@@ -7,10 +7,10 @@ CMakeFiles/craft.dir/src/matrix.c.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/Availability.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/AvailabilityVersions.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/AvailabilityInternal.h \
-  /Users/patrickcarvalho/projects/nosync.nosync/Craft1/src/config.h \
-  /Users/patrickcarvalho/projects/nosync.nosync/Craft1/src/matrix.h \
-  /Users/patrickcarvalho/projects/nosync.nosync/Craft1/src/util.h \
-  /Users/patrickcarvalho/projects/nosync.nosync/Craft1/deps/glew/include/GL/glew.h \
+  /Users/patrickcarvalho/projects/nosync.nosync/minecraft/src/config.h \
+  /Users/patrickcarvalho/projects/nosync.nosync/minecraft/src/matrix.h \
+  /Users/patrickcarvalho/projects/nosync.nosync/minecraft/src/util.h \
+  /Users/patrickcarvalho/projects/nosync.nosync/minecraft/deps/glew/include/GL/glew.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/include/stdint.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/stdint.h \
@@ -40,4 +40,4 @@ CMakeFiles/craft.dir/src/matrix.c.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/OpenGL.framework/Headers/OpenGLAvailability.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/os/availability.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gl.h \
-  /Users/patrickcarvalho/projects/nosync.nosync/Craft1/deps/glfw/include/GLFW/glfw3.h
+  /Users/patrickcarvalho/projects/nosync.nosync/minecraft/deps/glfw/include/GLFW/glfw3.h

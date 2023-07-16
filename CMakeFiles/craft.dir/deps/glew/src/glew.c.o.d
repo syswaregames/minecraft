@@ -1,6 +1,6 @@
 CMakeFiles/craft.dir/deps/glew/src/glew.c.o: \
-  /Users/patrickcarvalho/projects/nosync.nosync/Craft1/deps/glew/src/glew.c \
-  /Users/patrickcarvalho/projects/nosync.nosync/Craft1/deps/glew/include/GL/glew.h \
+  /Users/patrickcarvalho/projects/nosync.nosync/minecraft/deps/glew/src/glew.c \
+  /Users/patrickcarvalho/projects/nosync.nosync/minecraft/deps/glew/include/GL/glew.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/include/stdint.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/stdint.h \

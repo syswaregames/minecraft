@@ -1,5 +1,5 @@
 CMakeFiles/craft.dir/src/ring.c.o: \
-  /Users/patrickcarvalho/projects/nosync.nosync/Craft1/src/ring.c \
+  /Users/patrickcarvalho/projects/nosync.nosync/minecraft/src/ring.c \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/stdlib.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/Availability.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/AvailabilityVersions.h \
@@ -71,4 +71,4 @@ CMakeFiles/craft.dir/src/ring.c.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/secure/_strings.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/secure/_common.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/secure/_string.h \
-  /Users/patrickcarvalho/projects/nosync.nosync/Craft1/src/ring.h
+  /Users/patrickcarvalho/projects/nosync.nosync/minecraft/src/ring.h

@@ -1,6 +1,6 @@
 CMakeFiles/craft.dir/src/main.c.o: \
-  /Users/patrickcarvalho/projects/nosync.nosync/Craft1/src/main.c \
-  /Users/patrickcarvalho/projects/nosync.nosync/Craft1/deps/glew/include/GL/glew.h \
+  /Users/patrickcarvalho/projects/nosync.nosync/minecraft/src/main.c \
+  /Users/patrickcarvalho/projects/nosync.nosync/minecraft/deps/glew/include/GL/glew.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/include/stdint.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/stdint.h \
@@ -34,7 +34,7 @@ CMakeFiles/craft.dir/src/main.c.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/os/availability.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/AvailabilityInternal.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gl.h \
-  /Users/patrickcarvalho/projects/nosync.nosync/Craft1/deps/glfw/include/GLFW/glfw3.h \
+  /Users/patrickcarvalho/projects/nosync.nosync/minecraft/deps/glfw/include/GLFW/glfw3.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/curl/curl.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/curl/curlver.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/curl/system.h \
@@ -151,21 +151,21 @@ CMakeFiles/craft.dir/src/main.c.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/strings.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/secure/_strings.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/secure/_string.h \
-  /Users/patrickcarvalho/projects/nosync.nosync/Craft1/src/auth.h \
-  /Users/patrickcarvalho/projects/nosync.nosync/Craft1/src/client.h \
-  /Users/patrickcarvalho/projects/nosync.nosync/Craft1/src/config.h \
-  /Users/patrickcarvalho/projects/nosync.nosync/Craft1/src/cube.h \
-  /Users/patrickcarvalho/projects/nosync.nosync/Craft1/src/db.h \
-  /Users/patrickcarvalho/projects/nosync.nosync/Craft1/src/map.h \
-  /Users/patrickcarvalho/projects/nosync.nosync/Craft1/src/sign.h \
-  /Users/patrickcarvalho/projects/nosync.nosync/Craft1/src/item.h \
-  /Users/patrickcarvalho/projects/nosync.nosync/Craft1/src/matrix.h \
-  /Users/patrickcarvalho/projects/nosync.nosync/Craft1/deps/noise/noise.h \
-  /Users/patrickcarvalho/projects/nosync.nosync/Craft1/deps/tinycthread/tinycthread.h \
+  /Users/patrickcarvalho/projects/nosync.nosync/minecraft/src/auth.h \
+  /Users/patrickcarvalho/projects/nosync.nosync/minecraft/src/client.h \
+  /Users/patrickcarvalho/projects/nosync.nosync/minecraft/src/config.h \
+  /Users/patrickcarvalho/projects/nosync.nosync/minecraft/src/cube.h \
+  /Users/patrickcarvalho/projects/nosync.nosync/minecraft/src/db.h \
+  /Users/patrickcarvalho/projects/nosync.nosync/minecraft/src/map.h \
+  /Users/patrickcarvalho/projects/nosync.nosync/minecraft/src/sign.h \
+  /Users/patrickcarvalho/projects/nosync.nosync/minecraft/src/item.h \
+  /Users/patrickcarvalho/projects/nosync.nosync/minecraft/src/matrix.h \
+  /Users/patrickcarvalho/projects/nosync.nosync/minecraft/deps/noise/noise.h \
+  /Users/patrickcarvalho/projects/nosync.nosync/minecraft/deps/tinycthread/tinycthread.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/pthread.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/pthread/sched.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/pthread/pthread_impl.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/pthread/qos.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/sys/qos.h \
-  /Users/patrickcarvalho/projects/nosync.nosync/Craft1/src/util.h \
-  /Users/patrickcarvalho/projects/nosync.nosync/Craft1/src/world.h
+  /Users/patrickcarvalho/projects/nosync.nosync/minecraft/src/util.h \
+  /Users/patrickcarvalho/projects/nosync.nosync/minecraft/src/world.h
