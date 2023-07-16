@@ -1,0 +1,392 @@
+[
+{
+  "directory": "/Users/camaechi/Craft/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/camaechi/Craft/deps/glew/include -I/Users/camaechi/Craft/deps/glfw/include -I/Users/camaechi/Craft/deps/lodepng -I/Users/camaechi/Craft/deps/noise -I/Users/camaechi/Craft/deps/sqlite -I/Users/camaechi/Craft/deps/tinycthread -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk   -std=c99 -O3 -o CMakeFiles/craft.dir/src/auth.c.o -c /Users/camaechi/Craft/src/auth.c",
+  "file": "/Users/camaechi/Craft/src/auth.c",
+  "output": "CMakeFiles/craft.dir/src/auth.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/camaechi/Craft/deps/glew/include -I/Users/camaechi/Craft/deps/glfw/include -I/Users/camaechi/Craft/deps/lodepng -I/Users/camaechi/Craft/deps/noise -I/Users/camaechi/Craft/deps/sqlite -I/Users/camaechi/Craft/deps/tinycthread -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk   -std=c99 -O3 -o CMakeFiles/craft.dir/src/client.c.o -c /Users/camaechi/Craft/src/client.c",
+  "file": "/Users/camaechi/Craft/src/client.c",
+  "output": "CMakeFiles/craft.dir/src/client.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/camaechi/Craft/deps/glew/include -I/Users/camaechi/Craft/deps/glfw/include -I/Users/camaechi/Craft/deps/lodepng -I/Users/camaechi/Craft/deps/noise -I/Users/camaechi/Craft/deps/sqlite -I/Users/camaechi/Craft/deps/tinycthread -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk   -std=c99 -O3 -o CMakeFiles/craft.dir/src/cube.c.o -c /Users/camaechi/Craft/src/cube.c",
+  "file": "/Users/camaechi/Craft/src/cube.c",
+  "output": "CMakeFiles/craft.dir/src/cube.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/camaechi/Craft/deps/glew/include -I/Users/camaechi/Craft/deps/glfw/include -I/Users/camaechi/Craft/deps/lodepng -I/Users/camaechi/Craft/deps/noise -I/Users/camaechi/Craft/deps/sqlite -I/Users/camaechi/Craft/deps/tinycthread -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk   -std=c99 -O3 -o CMakeFiles/craft.dir/src/db.c.o -c /Users/camaechi/Craft/src/db.c",
+  "file": "/Users/camaechi/Craft/src/db.c",
+  "output": "CMakeFiles/craft.dir/src/db.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/camaechi/Craft/deps/glew/include -I/Users/camaechi/Craft/deps/glfw/include -I/Users/camaechi/Craft/deps/lodepng -I/Users/camaechi/Craft/deps/noise -I/Users/camaechi/Craft/deps/sqlite -I/Users/camaechi/Craft/deps/tinycthread -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk   -std=c99 -O3 -o CMakeFiles/craft.dir/src/item.c.o -c /Users/camaechi/Craft/src/item.c",
+  "file": "/Users/camaechi/Craft/src/item.c",
+  "output": "CMakeFiles/craft.dir/src/item.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/camaechi/Craft/deps/glew/include -I/Users/camaechi/Craft/deps/glfw/include -I/Users/camaechi/Craft/deps/lodepng -I/Users/camaechi/Craft/deps/noise -I/Users/camaechi/Craft/deps/sqlite -I/Users/camaechi/Craft/deps/tinycthread -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk   -std=c99 -O3 -o CMakeFiles/craft.dir/src/main.c.o -c /Users/camaechi/Craft/src/main.c",
+  "file": "/Users/camaechi/Craft/src/main.c",
+  "output": "CMakeFiles/craft.dir/src/main.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/camaechi/Craft/deps/glew/include -I/Users/camaechi/Craft/deps/glfw/include -I/Users/camaechi/Craft/deps/lodepng -I/Users/camaechi/Craft/deps/noise -I/Users/camaechi/Craft/deps/sqlite -I/Users/camaechi/Craft/deps/tinycthread -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk   -std=c99 -O3 -o CMakeFiles/craft.dir/src/map.c.o -c /Users/camaechi/Craft/src/map.c",
+  "file": "/Users/camaechi/Craft/src/map.c",
+  "output": "CMakeFiles/craft.dir/src/map.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/camaechi/Craft/deps/glew/include -I/Users/camaechi/Craft/deps/glfw/include -I/Users/camaechi/Craft/deps/lodepng -I/Users/camaechi/Craft/deps/noise -I/Users/camaechi/Craft/deps/sqlite -I/Users/camaechi/Craft/deps/tinycthread -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk   -std=c99 -O3 -o CMakeFiles/craft.dir/src/matrix.c.o -c /Users/camaechi/Craft/src/matrix.c",
+  "file": "/Users/camaechi/Craft/src/matrix.c",
+  "output": "CMakeFiles/craft.dir/src/matrix.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/camaechi/Craft/deps/glew/include -I/Users/camaechi/Craft/deps/glfw/include -I/Users/camaechi/Craft/deps/lodepng -I/Users/camaechi/Craft/deps/noise -I/Users/camaechi/Craft/deps/sqlite -I/Users/camaechi/Craft/deps/tinycthread -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk   -std=c99 -O3 -o CMakeFiles/craft.dir/src/ring.c.o -c /Users/camaechi/Craft/src/ring.c",
+  "file": "/Users/camaechi/Craft/src/ring.c",
+  "output": "CMakeFiles/craft.dir/src/ring.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/camaechi/Craft/deps/glew/include -I/Users/camaechi/Craft/deps/glfw/include -I/Users/camaechi/Craft/deps/lodepng -I/Users/camaechi/Craft/deps/noise -I/Users/camaechi/Craft/deps/sqlite -I/Users/camaechi/Craft/deps/tinycthread -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk   -std=c99 -O3 -o CMakeFiles/craft.dir/src/sign.c.o -c /Users/camaechi/Craft/src/sign.c",
+  "file": "/Users/camaechi/Craft/src/sign.c",
+  "output": "CMakeFiles/craft.dir/src/sign.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/camaechi/Craft/deps/glew/include -I/Users/camaechi/Craft/deps/glfw/include -I/Users/camaechi/Craft/deps/lodepng -I/Users/camaechi/Craft/deps/noise -I/Users/camaechi/Craft/deps/sqlite -I/Users/camaechi/Craft/deps/tinycthread -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk   -std=c99 -O3 -o CMakeFiles/craft.dir/src/util.c.o -c /Users/camaechi/Craft/src/util.c",
+  "file": "/Users/camaechi/Craft/src/util.c",
+  "output": "CMakeFiles/craft.dir/src/util.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/camaechi/Craft/deps/glew/include -I/Users/camaechi/Craft/deps/glfw/include -I/Users/camaechi/Craft/deps/lodepng -I/Users/camaechi/Craft/deps/noise -I/Users/camaechi/Craft/deps/sqlite -I/Users/camaechi/Craft/deps/tinycthread -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk   -std=c99 -O3 -o CMakeFiles/craft.dir/src/world.c.o -c /Users/camaechi/Craft/src/world.c",
+  "file": "/Users/camaechi/Craft/src/world.c",
+  "output": "CMakeFiles/craft.dir/src/world.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/camaechi/Craft/deps/glew/include -I/Users/camaechi/Craft/deps/glfw/include -I/Users/camaechi/Craft/deps/lodepng -I/Users/camaechi/Craft/deps/noise -I/Users/camaechi/Craft/deps/sqlite -I/Users/camaechi/Craft/deps/tinycthread -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk   -std=c99 -O3 -o CMakeFiles/craft.dir/deps/glew/src/glew.c.o -c /Users/camaechi/Craft/deps/glew/src/glew.c",
+  "file": "/Users/camaechi/Craft/deps/glew/src/glew.c",
+  "output": "CMakeFiles/craft.dir/deps/glew/src/glew.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/camaechi/Craft/deps/glew/include -I/Users/camaechi/Craft/deps/glfw/include -I/Users/camaechi/Craft/deps/lodepng -I/Users/camaechi/Craft/deps/noise -I/Users/camaechi/Craft/deps/sqlite -I/Users/camaechi/Craft/deps/tinycthread -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk   -std=c99 -O3 -o CMakeFiles/craft.dir/deps/lodepng/lodepng.c.o -c /Users/camaechi/Craft/deps/lodepng/lodepng.c",
+  "file": "/Users/camaechi/Craft/deps/lodepng/lodepng.c",
+  "output": "CMakeFiles/craft.dir/deps/lodepng/lodepng.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/camaechi/Craft/deps/glew/include -I/Users/camaechi/Craft/deps/glfw/include -I/Users/camaechi/Craft/deps/lodepng -I/Users/camaechi/Craft/deps/noise -I/Users/camaechi/Craft/deps/sqlite -I/Users/camaechi/Craft/deps/tinycthread -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk   -std=c99 -O3 -o CMakeFiles/craft.dir/deps/noise/noise.c.o -c /Users/camaechi/Craft/deps/noise/noise.c",
+  "file": "/Users/camaechi/Craft/deps/noise/noise.c",
+  "output": "CMakeFiles/craft.dir/deps/noise/noise.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/camaechi/Craft/deps/glew/include -I/Users/camaechi/Craft/deps/glfw/include -I/Users/camaechi/Craft/deps/lodepng -I/Users/camaechi/Craft/deps/noise -I/Users/camaechi/Craft/deps/sqlite -I/Users/camaechi/Craft/deps/tinycthread -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk   -std=c99 -O3 -o CMakeFiles/craft.dir/deps/sqlite/sqlite3.c.o -c /Users/camaechi/Craft/deps/sqlite/sqlite3.c",
+  "file": "/Users/camaechi/Craft/deps/sqlite/sqlite3.c",
+  "output": "CMakeFiles/craft.dir/deps/sqlite/sqlite3.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/camaechi/Craft/deps/glew/include -I/Users/camaechi/Craft/deps/glfw/include -I/Users/camaechi/Craft/deps/lodepng -I/Users/camaechi/Craft/deps/noise -I/Users/camaechi/Craft/deps/sqlite -I/Users/camaechi/Craft/deps/tinycthread -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk   -std=c99 -O3 -o CMakeFiles/craft.dir/deps/tinycthread/tinycthread.c.o -c /Users/camaechi/Craft/deps/tinycthread/tinycthread.c",
+  "file": "/Users/camaechi/Craft/deps/tinycthread/tinycthread.c",
+  "output": "CMakeFiles/craft.dir/deps/tinycthread/tinycthread.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build/deps/glfw/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/Users/camaechi/Craft/deps/glfw/src -I/Users/camaechi/Craft/build/deps/glfw/src -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fPIC   -std=c99 -O3 -Wall -o CMakeFiles/glfw.dir/context.c.o -c /Users/camaechi/Craft/deps/glfw/src/context.c",
+  "file": "/Users/camaechi/Craft/deps/glfw/src/context.c",
+  "output": "deps/glfw/src/CMakeFiles/glfw.dir/context.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build/deps/glfw/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/Users/camaechi/Craft/deps/glfw/src -I/Users/camaechi/Craft/build/deps/glfw/src -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fPIC   -std=c99 -O3 -Wall -o CMakeFiles/glfw.dir/init.c.o -c /Users/camaechi/Craft/deps/glfw/src/init.c",
+  "file": "/Users/camaechi/Craft/deps/glfw/src/init.c",
+  "output": "deps/glfw/src/CMakeFiles/glfw.dir/init.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build/deps/glfw/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/Users/camaechi/Craft/deps/glfw/src -I/Users/camaechi/Craft/build/deps/glfw/src -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fPIC   -std=c99 -O3 -Wall -o CMakeFiles/glfw.dir/input.c.o -c /Users/camaechi/Craft/deps/glfw/src/input.c",
+  "file": "/Users/camaechi/Craft/deps/glfw/src/input.c",
+  "output": "deps/glfw/src/CMakeFiles/glfw.dir/input.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build/deps/glfw/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/Users/camaechi/Craft/deps/glfw/src -I/Users/camaechi/Craft/build/deps/glfw/src -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fPIC   -std=c99 -O3 -Wall -o CMakeFiles/glfw.dir/monitor.c.o -c /Users/camaechi/Craft/deps/glfw/src/monitor.c",
+  "file": "/Users/camaechi/Craft/deps/glfw/src/monitor.c",
+  "output": "deps/glfw/src/CMakeFiles/glfw.dir/monitor.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build/deps/glfw/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/Users/camaechi/Craft/deps/glfw/src -I/Users/camaechi/Craft/build/deps/glfw/src -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fPIC   -std=c99 -O3 -Wall -o CMakeFiles/glfw.dir/window.c.o -c /Users/camaechi/Craft/deps/glfw/src/window.c",
+  "file": "/Users/camaechi/Craft/deps/glfw/src/window.c",
+  "output": "deps/glfw/src/CMakeFiles/glfw.dir/window.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build/deps/glfw/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/Users/camaechi/Craft/deps/glfw/src -I/Users/camaechi/Craft/build/deps/glfw/src -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fPIC   -std=c99 -O3 -Wall -o CMakeFiles/glfw.dir/cocoa_init.m.o -c /Users/camaechi/Craft/deps/glfw/src/cocoa_init.m",
+  "file": "/Users/camaechi/Craft/deps/glfw/src/cocoa_init.m",
+  "output": "deps/glfw/src/CMakeFiles/glfw.dir/cocoa_init.m.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build/deps/glfw/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/Users/camaechi/Craft/deps/glfw/src -I/Users/camaechi/Craft/build/deps/glfw/src -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fPIC   -std=c99 -O3 -Wall -o CMakeFiles/glfw.dir/cocoa_monitor.m.o -c /Users/camaechi/Craft/deps/glfw/src/cocoa_monitor.m",
+  "file": "/Users/camaechi/Craft/deps/glfw/src/cocoa_monitor.m",
+  "output": "deps/glfw/src/CMakeFiles/glfw.dir/cocoa_monitor.m.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build/deps/glfw/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/Users/camaechi/Craft/deps/glfw/src -I/Users/camaechi/Craft/build/deps/glfw/src -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fPIC   -std=c99 -O3 -Wall -o CMakeFiles/glfw.dir/cocoa_window.m.o -c /Users/camaechi/Craft/deps/glfw/src/cocoa_window.m",
+  "file": "/Users/camaechi/Craft/deps/glfw/src/cocoa_window.m",
+  "output": "deps/glfw/src/CMakeFiles/glfw.dir/cocoa_window.m.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build/deps/glfw/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/Users/camaechi/Craft/deps/glfw/src -I/Users/camaechi/Craft/build/deps/glfw/src -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fPIC   -std=c99 -O3 -Wall -o CMakeFiles/glfw.dir/iokit_joystick.m.o -c /Users/camaechi/Craft/deps/glfw/src/iokit_joystick.m",
+  "file": "/Users/camaechi/Craft/deps/glfw/src/iokit_joystick.m",
+  "output": "deps/glfw/src/CMakeFiles/glfw.dir/iokit_joystick.m.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build/deps/glfw/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/Users/camaechi/Craft/deps/glfw/src -I/Users/camaechi/Craft/build/deps/glfw/src -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fPIC   -std=c99 -O3 -Wall -o CMakeFiles/glfw.dir/mach_time.c.o -c /Users/camaechi/Craft/deps/glfw/src/mach_time.c",
+  "file": "/Users/camaechi/Craft/deps/glfw/src/mach_time.c",
+  "output": "deps/glfw/src/CMakeFiles/glfw.dir/mach_time.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build/deps/glfw/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/Users/camaechi/Craft/deps/glfw/src -I/Users/camaechi/Craft/build/deps/glfw/src -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fPIC   -std=c99 -O3 -Wall -o CMakeFiles/glfw.dir/posix_tls.c.o -c /Users/camaechi/Craft/deps/glfw/src/posix_tls.c",
+  "file": "/Users/camaechi/Craft/deps/glfw/src/posix_tls.c",
+  "output": "deps/glfw/src/CMakeFiles/glfw.dir/posix_tls.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build/deps/glfw/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/Users/camaechi/Craft/deps/glfw/src -I/Users/camaechi/Craft/build/deps/glfw/src -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fPIC   -std=c99 -O3 -Wall -o CMakeFiles/glfw.dir/nsgl_context.m.o -c /Users/camaechi/Craft/deps/glfw/src/nsgl_context.m",
+  "file": "/Users/camaechi/Craft/deps/glfw/src/nsgl_context.m",
+  "output": "deps/glfw/src/CMakeFiles/glfw.dir/nsgl_context.m.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build/deps/glfw/examples",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/camaechi/Craft/deps/glfw/include -I/Users/camaechi/Craft/deps/glfw/deps -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk   -std=c99 -O3 -Wall -o CMakeFiles/boing.dir/boing.c.o -c /Users/camaechi/Craft/deps/glfw/examples/boing.c",
+  "file": "/Users/camaechi/Craft/deps/glfw/examples/boing.c",
+  "output": "deps/glfw/examples/CMakeFiles/boing.dir/boing.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build/deps/glfw/examples",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/camaechi/Craft/deps/glfw/include -I/Users/camaechi/Craft/deps/glfw/deps -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk   -std=c99 -O3 -Wall -o CMakeFiles/gears.dir/gears.c.o -c /Users/camaechi/Craft/deps/glfw/examples/gears.c",
+  "file": "/Users/camaechi/Craft/deps/glfw/examples/gears.c",
+  "output": "deps/glfw/examples/CMakeFiles/gears.dir/gears.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build/deps/glfw/examples",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/camaechi/Craft/deps/glfw/include -I/Users/camaechi/Craft/deps/glfw/deps -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk   -std=c99 -O3 -Wall -o CMakeFiles/heightmap.dir/heightmap.c.o -c /Users/camaechi/Craft/deps/glfw/examples/heightmap.c",
+  "file": "/Users/camaechi/Craft/deps/glfw/examples/heightmap.c",
+  "output": "deps/glfw/examples/CMakeFiles/heightmap.dir/heightmap.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build/deps/glfw/examples",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/camaechi/Craft/deps/glfw/include -I/Users/camaechi/Craft/deps/glfw/deps -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk   -std=c99 -O3 -Wall -o CMakeFiles/heightmap.dir/__/deps/glad.c.o -c /Users/camaechi/Craft/deps/glfw/deps/glad.c",
+  "file": "/Users/camaechi/Craft/deps/glfw/deps/glad.c",
+  "output": "deps/glfw/examples/CMakeFiles/heightmap.dir/__/deps/glad.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build/deps/glfw/examples",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/camaechi/Craft/deps/glfw/include -I/Users/camaechi/Craft/deps/glfw/deps -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk   -std=c99 -O3 -Wall -o CMakeFiles/particles.dir/particles.c.o -c /Users/camaechi/Craft/deps/glfw/examples/particles.c",
+  "file": "/Users/camaechi/Craft/deps/glfw/examples/particles.c",
+  "output": "deps/glfw/examples/CMakeFiles/particles.dir/particles.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build/deps/glfw/examples",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/camaechi/Craft/deps/glfw/include -I/Users/camaechi/Craft/deps/glfw/deps -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk   -std=c99 -O3 -Wall -o CMakeFiles/particles.dir/__/deps/tinycthread.c.o -c /Users/camaechi/Craft/deps/glfw/deps/tinycthread.c",
+  "file": "/Users/camaechi/Craft/deps/glfw/deps/tinycthread.c",
+  "output": "deps/glfw/examples/CMakeFiles/particles.dir/__/deps/tinycthread.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build/deps/glfw/examples",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/camaechi/Craft/deps/glfw/include -I/Users/camaechi/Craft/deps/glfw/deps -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk   -std=c99 -O3 -Wall -o CMakeFiles/particles.dir/__/deps/getopt.c.o -c /Users/camaechi/Craft/deps/glfw/deps/getopt.c",
+  "file": "/Users/camaechi/Craft/deps/glfw/deps/getopt.c",
+  "output": "deps/glfw/examples/CMakeFiles/particles.dir/__/deps/getopt.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build/deps/glfw/examples",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/camaechi/Craft/deps/glfw/include -I/Users/camaechi/Craft/deps/glfw/deps -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk   -std=c99 -O3 -Wall -o CMakeFiles/simple.dir/simple.c.o -c /Users/camaechi/Craft/deps/glfw/examples/simple.c",
+  "file": "/Users/camaechi/Craft/deps/glfw/examples/simple.c",
+  "output": "deps/glfw/examples/CMakeFiles/simple.dir/simple.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build/deps/glfw/examples",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/camaechi/Craft/deps/glfw/include -I/Users/camaechi/Craft/deps/glfw/deps -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk   -std=c99 -O3 -Wall -o CMakeFiles/splitview.dir/splitview.c.o -c /Users/camaechi/Craft/deps/glfw/examples/splitview.c",
+  "file": "/Users/camaechi/Craft/deps/glfw/examples/splitview.c",
+  "output": "deps/glfw/examples/CMakeFiles/splitview.dir/splitview.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build/deps/glfw/examples",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/camaechi/Craft/deps/glfw/include -I/Users/camaechi/Craft/deps/glfw/deps -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk   -std=c99 -O3 -Wall -o CMakeFiles/wave.dir/wave.c.o -c /Users/camaechi/Craft/deps/glfw/examples/wave.c",
+  "file": "/Users/camaechi/Craft/deps/glfw/examples/wave.c",
+  "output": "deps/glfw/examples/CMakeFiles/wave.dir/wave.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build/deps/glfw/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/camaechi/Craft/deps/glfw/include -I/Users/camaechi/Craft/deps/glfw/deps -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk   -std=c99 -O3 -Wall -o CMakeFiles/clipboard.dir/clipboard.c.o -c /Users/camaechi/Craft/deps/glfw/tests/clipboard.c",
+  "file": "/Users/camaechi/Craft/deps/glfw/tests/clipboard.c",
+  "output": "deps/glfw/tests/CMakeFiles/clipboard.dir/clipboard.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build/deps/glfw/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/camaechi/Craft/deps/glfw/include -I/Users/camaechi/Craft/deps/glfw/deps -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk   -std=c99 -O3 -Wall -o CMakeFiles/clipboard.dir/__/deps/getopt.c.o -c /Users/camaechi/Craft/deps/glfw/deps/getopt.c",
+  "file": "/Users/camaechi/Craft/deps/glfw/deps/getopt.c",
+  "output": "deps/glfw/tests/CMakeFiles/clipboard.dir/__/deps/getopt.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build/deps/glfw/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/camaechi/Craft/deps/glfw/include -I/Users/camaechi/Craft/deps/glfw/deps -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk   -std=c99 -O3 -Wall -o CMakeFiles/events.dir/events.c.o -c /Users/camaechi/Craft/deps/glfw/tests/events.c",
+  "file": "/Users/camaechi/Craft/deps/glfw/tests/events.c",
+  "output": "deps/glfw/tests/CMakeFiles/events.dir/events.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build/deps/glfw/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/camaechi/Craft/deps/glfw/include -I/Users/camaechi/Craft/deps/glfw/deps -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk   -std=c99 -O3 -Wall -o CMakeFiles/events.dir/__/deps/getopt.c.o -c /Users/camaechi/Craft/deps/glfw/deps/getopt.c",
+  "file": "/Users/camaechi/Craft/deps/glfw/deps/getopt.c",
+  "output": "deps/glfw/tests/CMakeFiles/events.dir/__/deps/getopt.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build/deps/glfw/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/camaechi/Craft/deps/glfw/include -I/Users/camaechi/Craft/deps/glfw/deps -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk   -std=c99 -O3 -Wall -o CMakeFiles/msaa.dir/msaa.c.o -c /Users/camaechi/Craft/deps/glfw/tests/msaa.c",
+  "file": "/Users/camaechi/Craft/deps/glfw/tests/msaa.c",
+  "output": "deps/glfw/tests/CMakeFiles/msaa.dir/msaa.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build/deps/glfw/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/camaechi/Craft/deps/glfw/include -I/Users/camaechi/Craft/deps/glfw/deps -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk   -std=c99 -O3 -Wall -o CMakeFiles/msaa.dir/__/deps/getopt.c.o -c /Users/camaechi/Craft/deps/glfw/deps/getopt.c",
+  "file": "/Users/camaechi/Craft/deps/glfw/deps/getopt.c",
+  "output": "deps/glfw/tests/CMakeFiles/msaa.dir/__/deps/getopt.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build/deps/glfw/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/camaechi/Craft/deps/glfw/include -I/Users/camaechi/Craft/deps/glfw/deps -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk   -std=c99 -O3 -Wall -o CMakeFiles/gamma.dir/gamma.c.o -c /Users/camaechi/Craft/deps/glfw/tests/gamma.c",
+  "file": "/Users/camaechi/Craft/deps/glfw/tests/gamma.c",
+  "output": "deps/glfw/tests/CMakeFiles/gamma.dir/gamma.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build/deps/glfw/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/camaechi/Craft/deps/glfw/include -I/Users/camaechi/Craft/deps/glfw/deps -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk   -std=c99 -O3 -Wall -o CMakeFiles/gamma.dir/__/deps/getopt.c.o -c /Users/camaechi/Craft/deps/glfw/deps/getopt.c",
+  "file": "/Users/camaechi/Craft/deps/glfw/deps/getopt.c",
+  "output": "deps/glfw/tests/CMakeFiles/gamma.dir/__/deps/getopt.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build/deps/glfw/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/camaechi/Craft/deps/glfw/include -I/Users/camaechi/Craft/deps/glfw/deps -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk   -std=c99 -O3 -Wall -o CMakeFiles/glfwinfo.dir/glfwinfo.c.o -c /Users/camaechi/Craft/deps/glfw/tests/glfwinfo.c",
+  "file": "/Users/camaechi/Craft/deps/glfw/tests/glfwinfo.c",
+  "output": "deps/glfw/tests/CMakeFiles/glfwinfo.dir/glfwinfo.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build/deps/glfw/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/camaechi/Craft/deps/glfw/include -I/Users/camaechi/Craft/deps/glfw/deps -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk   -std=c99 -O3 -Wall -o CMakeFiles/glfwinfo.dir/__/deps/getopt.c.o -c /Users/camaechi/Craft/deps/glfw/deps/getopt.c",
+  "file": "/Users/camaechi/Craft/deps/glfw/deps/getopt.c",
+  "output": "deps/glfw/tests/CMakeFiles/glfwinfo.dir/__/deps/getopt.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build/deps/glfw/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/camaechi/Craft/deps/glfw/include -I/Users/camaechi/Craft/deps/glfw/deps -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk   -std=c99 -O3 -Wall -o CMakeFiles/iconify.dir/iconify.c.o -c /Users/camaechi/Craft/deps/glfw/tests/iconify.c",
+  "file": "/Users/camaechi/Craft/deps/glfw/tests/iconify.c",
+  "output": "deps/glfw/tests/CMakeFiles/iconify.dir/iconify.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build/deps/glfw/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/camaechi/Craft/deps/glfw/include -I/Users/camaechi/Craft/deps/glfw/deps -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk   -std=c99 -O3 -Wall -o CMakeFiles/iconify.dir/__/deps/getopt.c.o -c /Users/camaechi/Craft/deps/glfw/deps/getopt.c",
+  "file": "/Users/camaechi/Craft/deps/glfw/deps/getopt.c",
+  "output": "deps/glfw/tests/CMakeFiles/iconify.dir/__/deps/getopt.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build/deps/glfw/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/camaechi/Craft/deps/glfw/include -I/Users/camaechi/Craft/deps/glfw/deps -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk   -std=c99 -O3 -Wall -o CMakeFiles/joysticks.dir/joysticks.c.o -c /Users/camaechi/Craft/deps/glfw/tests/joysticks.c",
+  "file": "/Users/camaechi/Craft/deps/glfw/tests/joysticks.c",
+  "output": "deps/glfw/tests/CMakeFiles/joysticks.dir/joysticks.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build/deps/glfw/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/camaechi/Craft/deps/glfw/include -I/Users/camaechi/Craft/deps/glfw/deps -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk   -std=c99 -O3 -Wall -o CMakeFiles/monitors.dir/monitors.c.o -c /Users/camaechi/Craft/deps/glfw/tests/monitors.c",
+  "file": "/Users/camaechi/Craft/deps/glfw/tests/monitors.c",
+  "output": "deps/glfw/tests/CMakeFiles/monitors.dir/monitors.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build/deps/glfw/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/camaechi/Craft/deps/glfw/include -I/Users/camaechi/Craft/deps/glfw/deps -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk   -std=c99 -O3 -Wall -o CMakeFiles/monitors.dir/__/deps/getopt.c.o -c /Users/camaechi/Craft/deps/glfw/deps/getopt.c",
+  "file": "/Users/camaechi/Craft/deps/glfw/deps/getopt.c",
+  "output": "deps/glfw/tests/CMakeFiles/monitors.dir/__/deps/getopt.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build/deps/glfw/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/camaechi/Craft/deps/glfw/include -I/Users/camaechi/Craft/deps/glfw/deps -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk   -std=c99 -O3 -Wall -o CMakeFiles/reopen.dir/reopen.c.o -c /Users/camaechi/Craft/deps/glfw/tests/reopen.c",
+  "file": "/Users/camaechi/Craft/deps/glfw/tests/reopen.c",
+  "output": "deps/glfw/tests/CMakeFiles/reopen.dir/reopen.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build/deps/glfw/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/camaechi/Craft/deps/glfw/include -I/Users/camaechi/Craft/deps/glfw/deps -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk   -std=c99 -O3 -Wall -o CMakeFiles/cursor.dir/cursor.c.o -c /Users/camaechi/Craft/deps/glfw/tests/cursor.c",
+  "file": "/Users/camaechi/Craft/deps/glfw/tests/cursor.c",
+  "output": "deps/glfw/tests/CMakeFiles/cursor.dir/cursor.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build/deps/glfw/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/camaechi/Craft/deps/glfw/include -I/Users/camaechi/Craft/deps/glfw/deps -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk   -std=c99 -O3 -Wall -o CMakeFiles/empty.dir/empty.c.o -c /Users/camaechi/Craft/deps/glfw/tests/empty.c",
+  "file": "/Users/camaechi/Craft/deps/glfw/tests/empty.c",
+  "output": "deps/glfw/tests/CMakeFiles/empty.dir/empty.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build/deps/glfw/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/camaechi/Craft/deps/glfw/include -I/Users/camaechi/Craft/deps/glfw/deps -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk   -std=c99 -O3 -Wall -o CMakeFiles/empty.dir/__/deps/tinycthread.c.o -c /Users/camaechi/Craft/deps/glfw/deps/tinycthread.c",
+  "file": "/Users/camaechi/Craft/deps/glfw/deps/tinycthread.c",
+  "output": "deps/glfw/tests/CMakeFiles/empty.dir/__/deps/tinycthread.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build/deps/glfw/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/camaechi/Craft/deps/glfw/include -I/Users/camaechi/Craft/deps/glfw/deps -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk   -std=c99 -O3 -Wall -o CMakeFiles/sharing.dir/sharing.c.o -c /Users/camaechi/Craft/deps/glfw/tests/sharing.c",
+  "file": "/Users/camaechi/Craft/deps/glfw/tests/sharing.c",
+  "output": "deps/glfw/tests/CMakeFiles/sharing.dir/sharing.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build/deps/glfw/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/camaechi/Craft/deps/glfw/include -I/Users/camaechi/Craft/deps/glfw/deps -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk   -std=c99 -O3 -Wall -o CMakeFiles/tearing.dir/tearing.c.o -c /Users/camaechi/Craft/deps/glfw/tests/tearing.c",
+  "file": "/Users/camaechi/Craft/deps/glfw/tests/tearing.c",
+  "output": "deps/glfw/tests/CMakeFiles/tearing.dir/tearing.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build/deps/glfw/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/camaechi/Craft/deps/glfw/include -I/Users/camaechi/Craft/deps/glfw/deps -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk   -std=c99 -O3 -Wall -o CMakeFiles/tearing.dir/__/deps/getopt.c.o -c /Users/camaechi/Craft/deps/glfw/deps/getopt.c",
+  "file": "/Users/camaechi/Craft/deps/glfw/deps/getopt.c",
+  "output": "deps/glfw/tests/CMakeFiles/tearing.dir/__/deps/getopt.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build/deps/glfw/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/camaechi/Craft/deps/glfw/include -I/Users/camaechi/Craft/deps/glfw/deps -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk   -std=c99 -O3 -Wall -o CMakeFiles/threads.dir/threads.c.o -c /Users/camaechi/Craft/deps/glfw/tests/threads.c",
+  "file": "/Users/camaechi/Craft/deps/glfw/tests/threads.c",
+  "output": "deps/glfw/tests/CMakeFiles/threads.dir/threads.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build/deps/glfw/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/camaechi/Craft/deps/glfw/include -I/Users/camaechi/Craft/deps/glfw/deps -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk   -std=c99 -O3 -Wall -o CMakeFiles/threads.dir/__/deps/tinycthread.c.o -c /Users/camaechi/Craft/deps/glfw/deps/tinycthread.c",
+  "file": "/Users/camaechi/Craft/deps/glfw/deps/tinycthread.c",
+  "output": "deps/glfw/tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build/deps/glfw/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/camaechi/Craft/deps/glfw/include -I/Users/camaechi/Craft/deps/glfw/deps -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk   -std=c99 -O3 -Wall -o CMakeFiles/title.dir/title.c.o -c /Users/camaechi/Craft/deps/glfw/tests/title.c",
+  "file": "/Users/camaechi/Craft/deps/glfw/tests/title.c",
+  "output": "deps/glfw/tests/CMakeFiles/title.dir/title.c.o"
+},
+{
+  "directory": "/Users/camaechi/Craft/build/deps/glfw/tests",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/Users/camaechi/Craft/deps/glfw/include -I/Users/camaechi/Craft/deps/glfw/deps -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk   -std=c99 -O3 -Wall -o CMakeFiles/windows.dir/windows.c.o -c /Users/camaechi/Craft/deps/glfw/tests/windows.c",
+  "file": "/Users/camaechi/Craft/deps/glfw/tests/windows.c",
+  "output": "deps/glfw/tests/CMakeFiles/windows.dir/windows.c.o"
+}
+]
