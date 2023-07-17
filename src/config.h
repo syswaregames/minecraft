@@ -51,6 +51,8 @@
 #define CHUNK_SIZE 32
 #define COMMIT_INTERVAL 5
 
-#define TIME_OUT 5
+
+#define HAS_TIME_OUT 0
+#define TIME_OUT 20
 
 #endif

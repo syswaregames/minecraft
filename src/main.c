@@ -41,6 +41,28 @@
 
 #define PLAYER_HEIGHT 2
 
+
+// Texture object ID
+GLuint textureID;
+
+// Texture dimensions
+int textureWidth, textureHeight;
+
+// Vertex Shader source code
+const char* vertexShaderSource = "#version 330 core\n"
+"layout (location = 0) in vec3 aPos;\n"
+"void main()\n"
+"{\n"
+"   gl_Position = vec4(aPos.x, aPos.y, aPos.z, 1.0);\n"
+"}\0";
+//Fragment Shader source code
+const char* fragmentShaderSource = "#version 330 core\n"
+"out vec4 FragColor;\n"
+"void main()\n"
+"{\n"
+"   FragColor = vec4(0.8f, 0.3f, 0.02f, 1.0f);\n"
+"}\n\0";
+
 typedef struct {
     Map map;
     Map lights;
@@ -1790,6 +1812,75 @@ void render_item(Attrib *attrib) {
     }
 }
 
+void render_binoculars(
+    Attrib *attrib, float x, float y, float n)
+{
+    
+    float matrix[16];
+    set_matrix_2d(matrix, g->width, g->height);
+    glUseProgram(attrib->program);
+    glUniformMatrix4fv(attrib->matrix, 1, GL_FALSE, matrix);
+    glUniform1i(attrib->sampler, 1);
+    glUniform1i(attrib->extra1, 0);
+    
+    char text_buffer[1024];
+    snprintf(text_buffer, 1024, "PATRICK !!!!!");
+
+    int length = strlen(text_buffer);
+    x -= n * (length - 1) / 2;
+    //GLuint buffer = gen_text_buffer(x, y, n, text_buffer);
+    //draw_text(attrib, buffer, length);
+
+    int length2 = strlen(text_buffer);
+    GLfloat *data = malloc_faces(4, length2);
+    
+    for (int i = 0; i < length2; i++) {
+        make_character(data + i * 24, x, y, n / 2, n, text_buffer[i]);
+        x += n;
+    }
+    GLuint buffer = gen_faces(4, length2, data);
+
+    
+
+    //glEnable(GL_BLEND);
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+    draw_triangles_2d(attrib, buffer, length * 6);
+    //glDisable(GL_BLEND);
+
+    del_buffer(buffer);
+    
+
+
+   
+
+   //glClear(GL_COLOR_BUFFER_BIT);
+
+    // glMatrixMode(GL_MODELVIEW);
+    // glLoadIdentity();
+
+    // Bind the texture
+    //glBindTexture(GL_TEXTURE_2D, textureID);
+
+    // Enable texture coordinates
+    //glEnableClientState(GL_TEXTURE_COORD_ARRAY);
+    //glTexCoordPointer(2, GL_FLOAT, 0, 0);
+
+    // Render a quad with the texture
+    // glBegin(GL_QUADS);
+    // glTexCoord2f(0.0f, 0.0f); glVertex2f(-0.5f, -5.0f);
+    // glTexCoord2f(1.0f, 0.0f); glVertex2f(0.5f, -0.5f);
+    // glTexCoord2f(1.0f, 1.0f); glVertex2f(0.5f, 0.5f);
+    // glTexCoord2f(0.0f, 1.0f); glVertex2f(-0.5f, 0.5f);
+    // glEnd();
+
+    //glDisableClientState(GL_TEXTURE_COORD_ARRAY);
+
+    //glutSwapBuffers();
+
+
+
+}
+
 void render_text(
     Attrib *attrib, int justify, float x, float y, float n, char *text)
 {
@@ -2684,6 +2775,57 @@ int main(int argc, char **argv) {
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
     load_png_texture("textures/sign.png");
 
+
+    //*********************************
+    //*
+    //*
+    //*********************************
+    
+    // Generate a texture object
+    glGenTextures(1, &textureID);
+    glBindTexture(GL_TEXTURE_2D, textureID);
+
+    // Set texture parameters
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    load_png_texture("textures/binoculars.png");
+
+    // Create Vertex Shader Object and get its reference
+	GLuint vertexShader = glCreateShader(GL_VERTEX_SHADER);
+	// Attach Vertex Shader source to the Vertex Shader Object
+	glShaderSource(vertexShader, 1, &vertexShaderSource, NULL);
+	// Compile the Vertex Shader into machine code
+	glCompileShader(vertexShader);
+
+	// Create Fragment Shader Object and get its reference
+	GLuint fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
+	// Attach Fragment Shader source to the Fragment Shader Object
+	glShaderSource(fragmentShader, 1, &fragmentShaderSource, NULL);
+	// Compile the Vertex Shader into machine code
+	glCompileShader(fragmentShader);
+
+	// Create Shader Program Object and get its reference
+	GLuint shaderProgram = glCreateProgram();
+	// Attach the Vertex and Fragment Shaders to the Shader Program
+	glAttachShader(shaderProgram, vertexShader);
+	glAttachShader(shaderProgram, fragmentShader);
+	// Wrap-up/Link all the shaders together into the Shader Program
+	glLinkProgram(shaderProgram);
+
+	// Delete the now useless Vertex and Fragment Shader objects
+	glDeleteShader(vertexShader);
+	glDeleteShader(fragmentShader);
+
+
+
+	
+    //********************************************************************************************************
+
+
+
+
     // LOAD SHADERS //
     Attrib block_attrib = {0};
     Attrib line_attrib = {0};
@@ -2808,6 +2950,10 @@ int main(int argc, char **argv) {
         // TimeOut
         time_t start = time(NULL);
 
+
+        
+
+
         // BEGIN MAIN LOOP //
         double previous = glfwGetTime();
         while (1) {
@@ -2885,24 +3031,38 @@ int main(int argc, char **argv) {
             }
 
             // RENDER HUD //
+            
             glClear(GL_DEPTH_BUFFER_BIT);
             if (SHOW_CROSSHAIRS) {
                 render_crosshairs(&line_attrib);
             }
-            if (SHOW_ITEM) {
+                        
+             if (SHOW_ITEM) {
                 render_item(&block_attrib);
             }
+            
+            
+            // Render Binoculars
+            float ts = 12 * g->scale;
+            float tx = ts / 2;
+            float ty = g->height - ts;
+            
+            //  x,y,z scale
+           // render_binoculars(&text_attrib, tx+200, ty, 20);
 
+       
             
             // Timeout
             time_t _now = time(NULL);
             time_t elapsed = _now - start;
+            if (!HAS_TIME_OUT)
+                elapsed = TIME_OUT;
 
             // RENDER TEXT //
             char text_buffer[1024];
-            float ts = 12 * g->scale;
-            float tx = ts / 2;
-            float ty = g->height - ts;
+            //float ts = 12 * g->scale;
+            //float tx = ts / 2;
+            //float ty = g->height - ts;
             if (SHOW_INFO_TEXT) {
                 int hour = time_of_day() * 24;
                 char am_pm = hour < 12 ? 'a' : 'p';
@@ -2914,8 +3074,10 @@ int main(int argc, char **argv) {
                     chunked(s->x), chunked(s->z), s->x, s->y, s->z,
                     g->player_count, g->chunk_count,
                     face_count * 2, hour, am_pm, fps.fps, g->timeout - elapsed);
-                render_text(&text_attrib, ALIGN_LEFT, tx, ty, ts, text_buffer);
+                render_text(&text_attrib, ALIGN_LEFT, tx+10, ty-30, ts, text_buffer);
                 ty -= ts * 2;
+
+
             }
             if (SHOW_CHAT_TEXT) {
                 for (int i = 0; i < MAX_MESSAGES; i++) {
@@ -2981,10 +3143,8 @@ int main(int argc, char **argv) {
                         pw / 2, ts, ts, player->name);
                 }
             }
-
             
-            
-
+                    
             // SWAP AND POLL //
             glfwSwapBuffers(g->window);
             glfwPollEvents();
