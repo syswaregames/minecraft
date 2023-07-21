@@ -42,27 +42,6 @@
 #define PLAYER_HEIGHT 2
 
 
-// Texture object ID
-GLuint textureID;
-
-// Texture dimensions
-int textureWidth, textureHeight;
-
-// Vertex Shader source code
-const char* vertexShaderSource = "#version 330 core\n"
-"layout (location = 0) in vec3 aPos;\n"
-"void main()\n"
-"{\n"
-"   gl_Position = vec4(aPos.x, aPos.y, aPos.z, 1.0);\n"
-"}\0";
-//Fragment Shader source code
-const char* fragmentShaderSource = "#version 330 core\n"
-"out vec4 FragColor;\n"
-"void main()\n"
-"{\n"
-"   FragColor = vec4(0.8f, 0.3f, 0.02f, 1.0f);\n"
-"}\n\0";
-
 typedef struct {
     Map map;
     Map lights;
@@ -319,6 +298,14 @@ GLuint gen_text_buffer(float x, float y, float n, char *text) {
     }
     return gen_faces(4, length, data);
 }
+
+GLuint gen_plane_buffer(float x, float y, float n) {
+    //int length = strlen(text);
+    int length = 100;
+    GLfloat *data = malloc_faces(4, length);     
+    return gen_faces(4, length, data);
+}
+
 
 void draw_triangles_3d_ao(Attrib *attrib, GLuint buffer, int count) {
     glBindBuffer(GL_ARRAY_BUFFER, buffer);
@@ -1800,6 +1787,9 @@ void render_item(Attrib *attrib) {
     glUniform1i(attrib->sampler, 0);
     glUniform1f(attrib->timer, time_of_day());
     int w = items[g->item_index];
+
+    //printf(" == w == %i  ", w);
+
     if (is_plant(w)) {
         GLuint buffer = gen_plant_buffer(0, 0, 0, 0.5, w);
         draw_plant(attrib, buffer);
@@ -1812,73 +1802,24 @@ void render_item(Attrib *attrib) {
     }
 }
 
-void render_binoculars(
-    Attrib *attrib, float x, float y, float n)
+void render_binoculars(Attrib *attrib) 
 {
-    
     float matrix[16];
-    set_matrix_2d(matrix, g->width, g->height);
+    set_matrix_item(matrix, g->width, g->height, g->scale*20);
+    
     glUseProgram(attrib->program);
     glUniformMatrix4fv(attrib->matrix, 1, GL_FALSE, matrix);
-    glUniform1i(attrib->sampler, 1);
-    glUniform1i(attrib->extra1, 0);
+    glUniform3f(attrib->camera, 0, 0, 5);
+    glUniform1i(attrib->sampler, 0);
+    glUniform1f(attrib->timer, time_of_day());
+    int w = 23; 
+
+    //printf("w: %i, h: %i, scale: %i, x: %f y: %f \n", g->width, g->height, g->scale*20, -0.9, -.4);
     
-    char text_buffer[1024];
-    snprintf(text_buffer, 1024, "PATRICK !!!!!");
-
-    int length = strlen(text_buffer);
-    x -= n * (length - 1) / 2;
-    //GLuint buffer = gen_text_buffer(x, y, n, text_buffer);
-    //draw_text(attrib, buffer, length);
-
-    int length2 = strlen(text_buffer);
-    GLfloat *data = malloc_faces(4, length2);
+    GLuint buffer = gen_plant_buffer(-0.9, -.4, 0, 0.5, w);
     
-    for (int i = 0; i < length2; i++) {
-        make_character(data + i * 24, x, y, n / 2, n, text_buffer[i]);
-        x += n;
-    }
-    GLuint buffer = gen_faces(4, length2, data);
-
-    
-
-    //glEnable(GL_BLEND);
-    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-    draw_triangles_2d(attrib, buffer, length * 6);
-    //glDisable(GL_BLEND);
-
-    del_buffer(buffer);
-    
-
-
-   
-
-   //glClear(GL_COLOR_BUFFER_BIT);
-
-    // glMatrixMode(GL_MODELVIEW);
-    // glLoadIdentity();
-
-    // Bind the texture
-    //glBindTexture(GL_TEXTURE_2D, textureID);
-
-    // Enable texture coordinates
-    //glEnableClientState(GL_TEXTURE_COORD_ARRAY);
-    //glTexCoordPointer(2, GL_FLOAT, 0, 0);
-
-    // Render a quad with the texture
-    // glBegin(GL_QUADS);
-    // glTexCoord2f(0.0f, 0.0f); glVertex2f(-0.5f, -5.0f);
-    // glTexCoord2f(1.0f, 0.0f); glVertex2f(0.5f, -0.5f);
-    // glTexCoord2f(1.0f, 1.0f); glVertex2f(0.5f, 0.5f);
-    // glTexCoord2f(0.0f, 1.0f); glVertex2f(-0.5f, 0.5f);
-    // glEnd();
-
-    //glDisableClientState(GL_TEXTURE_COORD_ARRAY);
-
-    //glutSwapBuffers();
-
-
-
+        draw_plant(attrib, buffer);
+        del_buffer(buffer);
 }
 
 void render_text(
@@ -2527,7 +2468,8 @@ void handle_movement(double dt) {
     if (!g->typing) {
         float m = dt * 1.0;
         g->ortho = glfwGetKey(g->window, CRAFT_KEY_ORTHO) ? 64 : 0;
-        g->fov = glfwGetKey(g->window, CRAFT_KEY_ZOOM) ? 15 : 65;
+        g->fov = glfwGetKey(g->window, CRAFT_KEY_ZOOM) ? 15 : 65;        
+
         if (glfwGetKey(g->window, CRAFT_KEY_FORWARD)) {
             if(glfwGetKey(g->window, CRAFT_KEY_RUN)) isRunning = 1;
             sz--;
@@ -2775,61 +2717,15 @@ int main(int argc, char **argv) {
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
     load_png_texture("textures/sign.png");
 
-
-    //*********************************
-    //*
-    //*
-    //*********************************
-    
-    // Generate a texture object
-    glGenTextures(1, &textureID);
-    glBindTexture(GL_TEXTURE_2D, textureID);
-
-    // Set texture parameters
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-    load_png_texture("textures/binoculars.png");
-
-    // Create Vertex Shader Object and get its reference
-	GLuint vertexShader = glCreateShader(GL_VERTEX_SHADER);
-	// Attach Vertex Shader source to the Vertex Shader Object
-	glShaderSource(vertexShader, 1, &vertexShaderSource, NULL);
-	// Compile the Vertex Shader into machine code
-	glCompileShader(vertexShader);
-
-	// Create Fragment Shader Object and get its reference
-	GLuint fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
-	// Attach Fragment Shader source to the Fragment Shader Object
-	glShaderSource(fragmentShader, 1, &fragmentShaderSource, NULL);
-	// Compile the Vertex Shader into machine code
-	glCompileShader(fragmentShader);
-
-	// Create Shader Program Object and get its reference
-	GLuint shaderProgram = glCreateProgram();
-	// Attach the Vertex and Fragment Shaders to the Shader Program
-	glAttachShader(shaderProgram, vertexShader);
-	glAttachShader(shaderProgram, fragmentShader);
-	// Wrap-up/Link all the shaders together into the Shader Program
-	glLinkProgram(shaderProgram);
-
-	// Delete the now useless Vertex and Fragment Shader objects
-	glDeleteShader(vertexShader);
-	glDeleteShader(fragmentShader);
-
-
-
 	
     //********************************************************************************************************
-
-
 
 
     // LOAD SHADERS //
     Attrib block_attrib = {0};
     Attrib line_attrib = {0};
     Attrib text_attrib = {0};
+    Attrib binoculars_attrib = {0};
     Attrib sky_attrib = {0};
     GLuint program;
 
@@ -2862,6 +2758,21 @@ int main(int argc, char **argv) {
     text_attrib.matrix = glGetUniformLocation(program, "matrix");
     text_attrib.sampler = glGetUniformLocation(program, "sampler");
     text_attrib.extra1 = glGetUniformLocation(program, "is_sign");
+
+    program = load_program(
+        "shaders/block_vertex.glsl", "shaders/block_fragment.glsl");        
+    binoculars_attrib.program = program;
+    binoculars_attrib.position = glGetAttribLocation(program, "position");
+    binoculars_attrib.normal = glGetAttribLocation(program, "normal");
+    binoculars_attrib.uv = glGetAttribLocation(program, "uv");
+    binoculars_attrib.matrix = glGetUniformLocation(program, "matrix");
+    binoculars_attrib.sampler = glGetUniformLocation(program, "sampler");
+    binoculars_attrib.extra1 = glGetUniformLocation(program, "sky_sampler");
+    binoculars_attrib.extra2 = glGetUniformLocation(program, "daylight");
+    binoculars_attrib.extra3 = glGetUniformLocation(program, "fog_distance");
+    binoculars_attrib.extra4 = glGetUniformLocation(program, "ortho");
+    binoculars_attrib.camera = glGetUniformLocation(program, "camera");
+    binoculars_attrib.timer = glGetUniformLocation(program, "timer");
 
     program = load_program(
         "shaders/sky_vertex.glsl", "shaders/sky_fragment.glsl");
@@ -2950,10 +2861,6 @@ int main(int argc, char **argv) {
         // TimeOut
         time_t start = time(NULL);
 
-
-        
-
-
         // BEGIN MAIN LOOP //
         double previous = glfwGetTime();
         while (1) {
@@ -3037,20 +2944,15 @@ int main(int argc, char **argv) {
                 render_crosshairs(&line_attrib);
             }
                         
-             if (SHOW_ITEM) {
+             if (SHOW_ITEM) {                
                 render_item(&block_attrib);
             }
             
-            
-            // Render Binoculars
-            float ts = 12 * g->scale;
-            float tx = ts / 2;
-            float ty = g->height - ts;
-            
-            //  x,y,z scale
-           // render_binoculars(&text_attrib, tx+200, ty, 20);
-
-       
+            // Render Binoculars            
+            if (glfwGetKey(g->window, CRAFT_KEY_ZOOM))
+            {
+                render_binoculars(&block_attrib);
+            }
             
             // Timeout
             time_t _now = time(NULL);
@@ -3060,9 +2962,9 @@ int main(int argc, char **argv) {
 
             // RENDER TEXT //
             char text_buffer[1024];
-            //float ts = 12 * g->scale;
-            //float tx = ts / 2;
-            //float ty = g->height - ts;
+            float ts = 12 * g->scale;
+            float tx = ts / 2;
+            float ty = g->height - ts;
             if (SHOW_INFO_TEXT) {
                 int hour = time_of_day() * 24;
                 char am_pm = hour < 12 ? 'a' : 'p';
@@ -3070,7 +2972,7 @@ int main(int argc, char **argv) {
                 hour = hour ? hour : 12;
                 snprintf(
                     text_buffer, 1024,
-                    "(%d, %d) (%.2f, %.2f, %.2f) [%d, %d, %d] %d%cm %dfps Timeout %i",
+                    "(%d, %d) (%.2f, %.2f, %.2f) [%d, %d, %d] %d%cm %dfps Timeout %ld",
                     chunked(s->x), chunked(s->z), s->x, s->y, s->z,
                     g->player_count, g->chunk_count,
                     face_count * 2, hour, am_pm, fps.fps, g->timeout - elapsed);
@@ -3111,8 +3013,6 @@ int main(int argc, char **argv) {
             if (g->observe2) {
                 player = g->players + g->observe2;
 
-                
-                
                 int pw = 256 * g->scale;
                 int ph = 256 * g->scale;
                 int offset = 32 * g->scale;

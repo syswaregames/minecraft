@@ -238,6 +238,7 @@ void set_matrix_3d(
 }
 
 void set_matrix_item(float *matrix, int width, int height, int scale) {
+    
     float a[16];
     float b[16];
     float aspect = (float)width / height;
@@ -256,4 +257,5 @@ void set_matrix_item(float *matrix, int width, int height, int scale) {
     mat_multiply(a, b, a);
     mat_identity(matrix);
     mat_multiply(matrix, a, matrix);
+    
 }
