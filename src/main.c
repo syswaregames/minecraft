@@ -2160,6 +2160,11 @@ void parse_command(const char *buffer, int forward) {
     else if (sscanf(buffer, "/cylinder %d", &radius) == 1) {
         cylinder(&g->block0, &g->block1, radius, 0);
     }
+    else if (sscanf(buffer, "/addtime %d", &count) == 1) {
+        //printf("addtime: %i \n", count);
+        g->timeout += count;
+
+    }
     else if (forward) {
         client_talk(buffer);
     }
@@ -2976,7 +2981,7 @@ int main(int argc, char **argv) {
                     chunked(s->x), chunked(s->z), s->x, s->y, s->z,
                     g->player_count, g->chunk_count,
                     face_count * 2, hour, am_pm, fps.fps, g->timeout - elapsed);
-                render_text(&text_attrib, ALIGN_LEFT, tx+10, ty-30, ts, text_buffer);
+                render_text(&text_attrib, ALIGN_LEFT, tx, ty, ts, text_buffer);
                 ty -= ts * 2;
 
 
