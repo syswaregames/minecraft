@@ -3,13 +3,40 @@
         {
             "type": "cppbuild",
             "label": "C/C++: gcc build active file",
-            "command": "/usr/bin/gcc",
+            "command": "/usr/bin/clang",
             "args": [
-                "-fdiagnostics-color=always",
+                // including additional headers
+                "-I${workspaceFolder}/deps/glew/include",
+                "-I${workspaceFolder}/deps/glfw/include",
+                "-I${workspaceFolder}/deps/noise",
+                "-I${workspaceFolder}/deps/sqlite",
+                "-I${workspaceFolder}/deps/tinycthread",
+                "-fcolor-diagnostics",
+                "-fansi-escape-codes",
                 "-g",
                 "${file}",
-                "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
+                
+                "-o",            
+                "${fileDirname}/${fileBasenameNoExtension}",
+
+                //sqlite
+                "${workspaceFolder}/deps/sqlite/sqlite3.c",
+                "${workspaceFolder}/deps/sqlite/shell.c",
+
+                // tiny
+                "${workspaceFolder}/deps/tinycthread/tinycthread.c",
+
+
+                "${workspaceFolder}/src/db.c",
+
+                
+                // library files
+                "-L/opt/homebrew/lib ",
+                "-L/opt/X11/lib",
+                "-lGLEW",
+                "-lglfw",
+
+                
             ],
             "options": {
                 "cwd": "${fileDirname}"

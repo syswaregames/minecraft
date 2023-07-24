@@ -6,6 +6,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
+#include <stdbool.h>
 #include "auth.h"
 #include "client.h"
 #include "config.h"
@@ -157,6 +158,9 @@ typedef struct {
 
     int p_height; // player height
     long timeout;
+    bool hasTimeout;
+    // TimeOut
+    time_t start;
 } Model;
 
 static Model model;
@@ -2162,6 +2166,8 @@ void parse_command(const char *buffer, int forward) {
     }
     else if (sscanf(buffer, "/addtime %d", &count) == 1) {
         //printf("addtime: %i \n", count);
+        g->start = time(NULL);
+        g->hasTimeout = true;
         g->timeout += count;
 
     }
@@ -2648,7 +2654,7 @@ void reset_model() {
     glfwSetTime(g->day_length / 3.0);
     g->time_changed = 1;
     g->p_height = 2;
-    g->timeout = TIME_OUT;
+    g->timeout = 0;
 }
 
 int main(int argc, char **argv) {
@@ -2863,9 +2869,6 @@ int main(int argc, char **argv) {
             s->y = highest_block(s->x, s->z);
         }
 
-        // TimeOut
-        time_t start = time(NULL);
-
         // BEGIN MAIN LOOP //
         double previous = glfwGetTime();
         while (1) {
@@ -2961,9 +2964,9 @@ int main(int argc, char **argv) {
             
             // Timeout
             time_t _now = time(NULL);
-            time_t elapsed = _now - start;
-            if (!HAS_TIME_OUT)
-                elapsed = TIME_OUT;
+            time_t elapsed = _now - g->start;
+            if (!g->hasTimeout)
+                elapsed = g->timeout;
 
             // RENDER TEXT //
             char text_buffer[1024];
@@ -2975,12 +2978,26 @@ int main(int argc, char **argv) {
                 char am_pm = hour < 12 ? 'a' : 'p';
                 hour = hour % 12;
                 hour = hour ? hour : 12;
-                snprintf(
+                
+                if (g->hasTimeout)
+                {
+                    snprintf(
+                        text_buffer, 1024,
+                        "(%d, %d) (%.2f, %.2f, %.2f) [%d, %d, %d] %d%cm %dfps Timeout %ld",
+                        chunked(s->x), chunked(s->z), s->x, s->y, s->z,
+                        g->player_count, g->chunk_count,
+                        face_count * 2, hour, am_pm, fps.fps, g->timeout - elapsed);
+                }
+                else
+                {
+                    snprintf(
                     text_buffer, 1024,
-                    "(%d, %d) (%.2f, %.2f, %.2f) [%d, %d, %d] %d%cm %dfps Timeout %ld",
+                    "(%d, %d) (%.2f, %.2f, %.2f) [%d, %d, %d] %d%cm %dfps",
                     chunked(s->x), chunked(s->z), s->x, s->y, s->z,
                     g->player_count, g->chunk_count,
-                    face_count * 2, hour, am_pm, fps.fps, g->timeout - elapsed);
+                    face_count * 2, hour, am_pm, fps.fps);
+                }
+
                 render_text(&text_attrib, ALIGN_LEFT, tx, ty, ts, text_buffer);
                 ty -= ts * 2;
 
